@@ -1,0 +1,9 @@
+<%= notice %>
+<br>
+<p>You asked:
+  <%= @word_problem.problem %>
+</p>
+<p>The answer is:
+  <%= @word_problem.solution %>
+</p>
+<%= link_to 'Ask another problem', new_word_problem_path %>

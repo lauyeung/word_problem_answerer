@@ -1,0 +1,2 @@
+module WordProblemsHelper
+end

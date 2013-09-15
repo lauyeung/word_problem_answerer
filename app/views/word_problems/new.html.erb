@@ -1,0 +1,29 @@
+<h1>Create a new Word Problem</h1>
+
+<%= form_for(@word_problem) do |f| %>
+    <% if @word_problem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@word_problem.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+      <ul>
+      <% @word_problem.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+
+  <div class="field">
+    <%= f.label :problem %><br>
+    <%= f.text_area :problem %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Solve" %>
+  </div>
+
+
+<%- end -%>
